@@ -20,15 +20,7 @@ class Artist
     song.artist = self unless song.artist == self
   end
 
-  # def self.find_or_create_by_name(name)
-  #   if self.find(name)
-  #     self.find(name)
-  #   else
-  #     self.create(name)
-  #   end
-  # end
-  
-    def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     ## SOLUTION 1
     self.find(name) ? self.find(name) : self.create(name)
     ## SOLUTION 2
