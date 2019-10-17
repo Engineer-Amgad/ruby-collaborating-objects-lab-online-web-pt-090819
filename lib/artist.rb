@@ -53,8 +53,8 @@ class Artist
   end
 
   def print_songs
-    songs_array = songs
-    songs_array.each do |song|
+    #songs_array = songs
+    songs.each do |song|
       puts song.name 
     end 
   end
